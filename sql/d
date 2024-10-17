@@ -1,0 +1,3 @@
+-- Leaderboard: You can create a query to fetch players ordered by their scores:
+
+-- SELECT username, score FROM users ORDER BY score DESC;

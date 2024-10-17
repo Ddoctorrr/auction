@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Host</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+    <!-- Host Login Section -->
+    <section id="host-login-screen">
+        <h1>Bienvenue Hôte</h1>
+        <form id="host-login-form">
+            <label for="host-username">Entrez votre nom :</label>
+            <input type="text" id="host-username" name="host-username" required>
+            <button type="submit">Commencer</button>
+        </form>
+    </section>
+
+    <!-- Host Waiting Area -->
+    <section id="host-waiting-screen" style="display: none;">
+        <h2>Joueurs connectés :</h2>
+        <ul id="player-list"></ul>
+        <button id="start-game">Commencer le jeu</button>
+    </section>
+
+    <!-- Host Bidding View -->
+    <section id="host-bidding-screen" style="display: none;">
+        <h2>Vérifiez les enchères</h2>
+        <button id="refresh-bids">Rafraîchir les enchères</button>
+        <ul id="bid-list"></ul>
+        <button id="reveal-price">Révéler le prix</button>
+    </section>
+
+    <!-- Host Result Screen -->
+    <section id="host-result-screen" style="display: none;">
+        <h2>Tableau des scores</h2>
+        <ul id="scoreboard"></ul>
+    </section>
+
+    <script src="js/host.js"></script>
+</body>
+</html>

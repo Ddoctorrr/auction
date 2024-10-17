@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Player</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+    <!-- Player Login Section -->
+    <section id="login-screen">
+        <h1>Bienvenue au jeu d'enchères</h1>
+        <form id="username-form">
+            <label for="username">Entrez votre nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Rejoindre</button>
+        </form>
+        <p id="error-message" style="display: none; color: red;">Ce nom d'utilisateur existe déjà, veuillez en choisir un autre.</p>
+    </section>
+
+    <!-- Waiting Screen -->
+    <section id="waiting-screen" style="display: none;">
+        <h2>En attente du début du jeu...</h2>
+        <p>Veuillez patienter pendant que l'hôte commence le jeu.</p>
+    </section>
+
+    <!-- Bidding Screen -->
+    <section id="bidding-screen" style="display: none;">
+        <h2>Placer votre enchère</h2>
+        <p>Prix de l'œuvre: <span id="artwork-price">???</span></p>
+        <form id="bid-form">
+            <label for="bid">Votre enchère (en $):</label>
+            <input type="number" id="bid" name="bid" required>
+            <button type="submit">Soumettre</button>
+        </form>
+    </section>
+
+    <!-- Result Screen -->
+    <section id="result-screen" style="display: none;">
+        <h2>Résultats</h2>
+        <p>Votre enchère: <span id="your-bid"></span></p>
+        <p>Le prix correct: <span id="correct-price"></span></p>
+        <p>Votre classement: <span id="ranking"></span></p>
+    </section>
+
+    <script src="js/player.js"></script>
+</body>
+</html>
